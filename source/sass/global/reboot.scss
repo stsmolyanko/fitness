@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-pt-mono;
+  font-family: $ff-roboto;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -43,6 +43,10 @@ body main {
 a {
   color: $color-default-black;
   text-decoration: none;
+}
+
+ul:not([class]) {
+  list-style: none;
 }
 
 img,
