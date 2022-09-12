@@ -1,5 +1,7 @@
 .button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 55px;
   color: $color-default-white;
   font-family: $ff-roboto;
@@ -9,11 +11,35 @@
   border: 4px solid $color-default-white;
   background-color: transparent;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     padding: 19px 59px;
     color: $color-default-white;
     border: none;
     background: $red-to-blue;
+  }
+
+  &--dark {
+    padding: 20px 45px;
+    color: $color-sapphire-blue;
+    border: 2px solid $color-sapphire-blue;
+
+    &:hover {
+      padding: 22px 47px;
+      color: $color-default-white;
+      border: none;
+      background: $red-to-blue;
+    }
+  }
+
+  &--promo {
+    padding: 20px 50px;
+
+    &:hover {
+      padding: 20px 50px;
+      background: $color-sapphire-blue;
+      border: 4px solid $color-sapphire-blue;
+    }
   }
 }

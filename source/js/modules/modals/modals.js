@@ -1,5 +1,7 @@
 import {ScrollLock} from '../../utils/scroll-lock';
 import {FocusLock} from '../../utils/focus-lock';
+import {insertVideo} from './player';
+import {removeVideo} from './player';
 
 export class Modals {
   constructor(settings = {}) {
@@ -133,6 +135,7 @@ export class Modals {
     });
   }
 
+
   open(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
 
@@ -167,6 +170,7 @@ export class Modals {
     setTimeout(() => {
       this._addListeners(modal);
       this._autoPlay(modal);
+      insertVideo();
       document.addEventListener('click', this._documentClickHandler);
     }, this._eventTimeout);
   }
@@ -199,6 +203,7 @@ export class Modals {
 
     setTimeout(() => {
       document.addEventListener('click', this._documentClickHandler);
+      removeVideo();
     }, this._eventTimeout);
 
     this._setSettings('default');

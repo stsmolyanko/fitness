@@ -1,0 +1,33 @@
+.plans {
+  position: relative;
+  padding-top: 119px;
+  padding-bottom: 105px;
+  background-color: $color-grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    right: -124px;
+    width: 481px;
+    height: 493px;
+    background-image: url(../img/plans/weights.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../img/plans/weights@2x.png);
+    }
+  }
+}
+
+.plans h2 {
+  margin: 0;
+  margin-bottom: 34px;
+  font-family: $ff-bebas;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: normal;
+  text-align: center;
+}
+

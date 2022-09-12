@@ -1,8 +1,3 @@
-
-
-
-
-
 // Маска телефона
 
 // document.addEventListener('DOMContentLoaded', function () {
