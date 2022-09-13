@@ -1,12 +1,12 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper, {Navigation} from 'swiper';
 
 const initSwiper = () => new Swiper('.swiper', {
-  // Optional parameters
+  modules: Navigation,
   direction: 'horizontal',
   loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
