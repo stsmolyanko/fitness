@@ -1,14 +1,27 @@
 .plans {
-  position: relative;
   padding-top: 119px;
   padding-bottom: 105px;
   background-color: $color-grey;
 
+  @include vp-1199 {
+    padding-top: 98px;
+    padding-bottom: 44px;
+  }
+
+  @include vp-767 {
+    padding-top: 69px;
+    padding-bottom: 19px;
+  }
+}
+
+.plans .container {
+  position: relative;
+
   &::after {
     content: "";
     position: absolute;
-    bottom: -150px;
-    right: -124px;
+    bottom: -272px;
+    right: -257px;
     width: 481px;
     height: 493px;
     background-image: url(../img/plans/weights.png);
@@ -18,6 +31,27 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url(../img/plans/weights@2x.png);
     }
+
+    @include vp-1199 {
+      bottom: -223px;
+      right: -75px;
+      width: 421px;
+      height: 480px;
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -29,5 +63,15 @@
   font-size: 52px;
   line-height: normal;
   text-align: center;
+
+  @include vp-1199 {
+    margin-bottom: 27px;
+    font-size: 45px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 19px;
+    font-size: 34px;
+  }
 }
 

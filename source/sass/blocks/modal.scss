@@ -95,7 +95,7 @@
     .modal__content {
       width: auto;
 
-      @include vp-767 {
+      @include vp-1199 {
         width: 100%;
       }
     }
@@ -118,11 +118,11 @@
   }
 }
 
-.modal__youtube {
-  &--close {
-    display: none;
+.modal iframe {
+  @include vp-1199 {
+    width: 100%;
+    height: 46vw;
   }
 }
-
 
 

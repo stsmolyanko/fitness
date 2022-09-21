@@ -13,6 +13,10 @@
   cursor: pointer;
   user-select: none;
 
+  @include vp-767 {
+    width: 100%;
+  }
+
   &:hover {
     padding: 19px 59px;
     color: $color-default-white;
@@ -21,7 +25,7 @@
   }
 
   &--dark {
-    padding: 20px 45px;
+    padding: 20px 20px;
     color: $color-sapphire-blue;
     border: 2px solid $color-sapphire-blue;
 
@@ -30,6 +34,14 @@
       color: $color-default-white;
       border: none;
       background: $red-to-blue;
+
+      @include vp-767 {
+        padding: 22px 22px;
+      }
+    }
+
+    @include vp-1199 {
+      padding: 20px 24px;
     }
   }
 
@@ -40,6 +52,35 @@
       padding: 20px 50px;
       background: $color-sapphire-blue;
       border: 4px solid $color-sapphire-blue;
+    }
+
+    @include vp-1199 {
+      padding: 7px 20px;
+      font-size: 1.4vw;
+      border-width: 2px;
+
+      &:hover {
+        padding: 5px 20px;
+        background: $color-sapphire-blue;
+      }
+    }
+
+    @include vp-767 {
+      font-size: 2vw;
+      padding: 11px;
+
+      &:hover {
+        padding: 9px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      font-size: 11px;
+      padding: 7px;
+
+      &:hover {
+        padding: 5px;
+      }
     }
   }
 }

@@ -1,4 +1,42 @@
-.swiper {
-  width: 100%;
-  height: 300px;
+.swiper, .swiper-wrapper {
+  position: initial;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 50%;
+  transform: scale(0.8);
+  color: $color-dark-grey;
+
+  @include vp-1199 {
+    top: 48%;
+  }
+
+  @include vp-767 {
+    top: 51%;
+    transform: scale(0.5);
+  }
+}
+
+.swiper-button-prev {
+  left: 2.7vw;
+
+  @include vp-1199 {
+    left: 39px;
+  }
+
+  @include vp-767 {
+    left: 2vw;
+  }
+}
+
+.swiper-button-next {
+  right: 2.7vw;
+
+  @include vp-1199 {
+    right: 39px;
+  }
+
+  @include vp-767 {
+    right: 2vw;
+  }
 }

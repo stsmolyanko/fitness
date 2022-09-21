@@ -1,0 +1,260 @@
+.contacts {
+  padding-top: 69px;
+  padding-bottom: 62px;
+  overflow-x: hidden;
+}
+
+.contacts .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  @include vp-1199 {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+  }
+}
+
+.contacts h2 {
+  margin: 0;
+  margin-bottom: 34px;
+  font-family: $ff-bebas;
+  font-size: 53px;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-bottom: 29px;
+    font-size: 45px;
+  }
+
+  @include vp-767 {
+    font-size: 34px;
+  }
+}
+
+.contacts__wrapper-form {
+  position: relative;
+  padding-right: 137px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -1000px;
+    top: -69px;
+    width: 272.5%;
+    height: 164%;
+    background-color: $color-sapphire-blue;
+
+    @include vp-1199 {
+      left: -270px;
+      width: 130vw;
+      height: 100%;
+    }
+
+    @include vp-767 {
+      left: -100px;
+      height: 155%;
+    }
+  }
+
+  @include vp-1199 {
+    justify-self: center;
+    max-width: 678px;
+    padding: 0 59px 137px 88px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    width: 80%;
+    padding: 0;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.contacts__wrapper-form h2 {
+  color: $color-default-white;
+}
+
+.contacts form {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.contacts input {
+  margin-right: 32px;
+  padding: 6px 0;
+  color: $color-default-white;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-slate-grey;
+
+  &:focus-visible {
+    border-bottom: 1px solid $color-default-white;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:hover {
+    border-color: $color-default-white-70;
+  }
+
+  @include vp-1199 {
+    margin-right: 57px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.contacts input[type=text],
+.contacts input[type=tel] {
+  flex-grow: 1;
+
+  @include vp-767 {
+    margin-bottom: 33px;
+    margin-right: 0;
+  }
+}
+
+.contacts input[type=submit] {
+  width: 100%;
+  margin-top: 28px;
+  padding: 16px;
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid $color-default-white;
+  cursor: pointer;
+  white-space: pre-line;
+
+  &:hover {
+    padding: 19px;
+    background: $red-to-blue;
+    border: none;
+  }
+
+  &:focus-visible {
+    border: 3px solid $color-red;
+  }
+
+  @include vp-767 {
+    margin-top: 5px;
+  }
+}
+
+.contacts__wrapper-contacts {
+  padding-left: 120px;
+
+  @include vp-1199 {
+    justify-self: center;
+    padding: 0 59px 0 13px
+  }
+
+  @include vp-767 {
+    width: 80%;
+    margin-top: 137px;
+    padding-left: 0;
+  }
+
+  @media (max-width: 500px) {
+    justify-self: start;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.contacts__wrapper-contacts h2 {
+  margin-bottom: 39px;
+
+  @include vp-1199 {
+    margin-bottom: 34px;
+  }
+}
+
+.contacts__wrapper-contacts address {
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+
+    justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.contacts__wrapper-contacts p {
+  margin: 0;
+  font-size: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+
+    @include vp-1199 {
+      margin-bottom: 25px;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+}
+
+.contacts__wrapper-contacts span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+
+  @include vp-1199 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+.contacts__wrapper-address:not(:last-child) {
+  padding-right: 61px;
+  margin-right: 59px;
+  border-right: 1px solid $color-slate-grey;
+
+  @include vp-1199 {
+    padding-right: 50px;
+    margin-right: 47px;
+  }
+
+  @include vp-767 {
+    margin-right: 20px;
+    margin-bottom: 24px;
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.contacts__wrapper-address a {
+  color: $color-sapphire-blue;
+}

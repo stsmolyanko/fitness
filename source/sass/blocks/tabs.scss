@@ -7,6 +7,14 @@
   margin-bottom: 38px;
   display: flex;
   justify-content: center;
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 32px;
+  }
 }
 
 .tabs__item-wrapper {
@@ -33,8 +41,24 @@
   font-size: 20px;
   text-decoration: none;
 
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+
   &:not(:last-of-type) {
     margin-right: 47px;
+
+    @include vp-1199 {
+      margin-right: 55px;
+    }
+
+    @include vp-767 {
+      margin-right: 46px;
+    }
   }
 
   &--active {
@@ -65,9 +89,14 @@
 .tabs__list {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   animation: fade 0.3s ease-out;
+
+  @include vp-1199 {
+    justify-content: center;
+  }
 }
 
 .tabs__list li {
@@ -82,10 +111,20 @@
   &:hover {
     background: $blue-to-red;
   }
+
+  @include vp-1199 {
+    width: 440px;
+    margin: 0 20px 41px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0 0 37px;
+  }
 }
 
 .tabs__wrapper-inner {
-  padding: 60px 69px;
+  padding: 60px 35px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -93,6 +132,10 @@
   align-items: center;
   justify-content: center;
   background-color: $color-default-white;
+
+  @include vp-767 {
+    padding: 46px 36px;
+  }
 }
 
 .tabs__list h3 {
@@ -102,6 +145,11 @@
   font-size: 26px;
   text-align: center;
   color: $color-sapphire-blue;
+
+  @include vp-767 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
 }
 
 .tabs__list p {
@@ -109,16 +157,25 @@
   margin-bottom: 98px;
   text-align: center;
   color: $color-chambray;
+
+  @include vp-767 {
+    margin-bottom: 78px;
+  }
 }
 
 .tabs__list .tabs__price {
   position: relative;
   z-index: 1;
   margin-bottom: 66px;
-  font-size: 59px;
+  font-size: 58px;
   font-weight: 700;
   text-align: center;
   color: $color-sapphire-blue;
+
+  @include vp-767 {
+    font-size: 47px;
+    margin-bottom: 52px;
+  }
 
   &::before {
     content: attr(data-price);
@@ -128,6 +185,11 @@
     left: -17px;
     font-size: 100px;
     color: $color-whisper;
+
+    @include vp-767 {
+      left: -13px;
+      font-size: 79px;
+    }
   }
 }
 
@@ -136,5 +198,9 @@
 }
 
 .tabs__button {
-  width: 100%;
+  width: 75%;
+
+  @include vp-1199 {
+    width: 59%;
+  }
 }

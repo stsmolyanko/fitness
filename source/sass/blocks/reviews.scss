@@ -1,0 +1,169 @@
+.reviews {
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+}
+
+.reviews .container {
+  position: relative;
+}
+
+.reviews h2 {
+  margin: 0;
+  margin-bottom: 51px;
+  font-family: $ff-bebas;
+  font-size: 52px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-bottom: 37px;
+    font-size: 45px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 39px;
+    font-size: 34px;
+  }
+}
+
+.reviews__slider {
+  width: 48%;
+  height: auto;
+
+  @include vp-1199 {
+    width: 83%;
+  }
+
+  @include vp-767 {
+    width: 78%;
+  }
+}
+
+.reviews__slide {
+  height: auto;
+}
+
+.reviews__slide-wrapper {
+  padding: 56px 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
+
+  @include vp-767 {
+    position: relative;
+    padding: 50px 22px 33px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reviews img {
+  margin-top: -39px;
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+
+  @include vp-767 {
+    position: absolute;
+    top: 40px;
+    left: 20vw;
+    margin-top: 0;
+    width: 70px;
+    height: auto;
+  }
+
+  @media (max-width: 524px) {
+    left: 15vw;
+  }
+
+  @media (max-width: 400px) {
+    left: 13vw;
+  }
+}
+
+.reviews h3 {
+  margin: 0;
+  font-size: 20px;
+
+  @include vp-767 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    margin-left: 32vw;
+    margin-bottom: 26px;
+  }
+}
+
+.reviews__slide-text-wrapper {
+  width: 270%;
+  margin-left: 31px;
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+}
+
+.reviews p {
+  margin: 0;
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 23px;
+
+  @include vp-767 {
+    text-align: center;
+    line-height: 22.3px;
+  }
+}
+
+.reviews .swiper-button-prev {
+  left: 278px;
+  top: 65%;
+
+  @include vp-1199 {
+    left: 12vw;
+    top: 63%;
+  }
+
+  @media (max-width: 980px) {
+    left: 5vw;
+  }
+
+  @include vp-767 {
+    left: 2vw;
+    top: 59%;
+  }
+}
+
+.reviews .swiper-button-next {
+  right: 278px;
+  top: 65%;
+
+  @include vp-1199 {
+    right: 12vw;
+    top: 63%;
+  }
+
+  @media (max-width: 980px) {
+    right: 5vw;
+  }
+
+  @include vp-767 {
+    right: 2vw;
+    top: 59%;
+  }
+}

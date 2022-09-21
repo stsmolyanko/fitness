@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initTabs} from './modules/tabs';
-import {initSwiper} from './modules/slider';
+import {initAllSwipers} from './modules/slider';
 
 
 // ---------------------------------
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initTabs();
-    initSwiper();
+    initAllSwipers();
   });
 });
 
