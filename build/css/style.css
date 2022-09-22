@@ -804,7 +804,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
-  overflow-x: hidden;
 }
 
 body main {
@@ -1271,9 +1270,6 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   list-style: none;
   -webkit-animation: fade 0.3s ease-out;
   animation: fade 0.3s ease-out;
@@ -1290,6 +1286,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   height: auto;
+  margin-bottom: 40px;
   width: 31%;
   padding: 5px 5px;
   background-color: #ffffff;
@@ -1297,6 +1294,10 @@ button,
 
 .tabs__list li:hover {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+}
+
+.tabs__list li:not(:nth-child(3n)) {
+  margin-right: 40px;
 }
 
 .tabs__wrapper-inner {
@@ -1732,7 +1733,7 @@ button,
 
 .plans {
   padding-top: 119px;
-  padding-bottom: 105px;
+  padding-bottom: 65px;
   background-color: #f8f9fc;
 }
 
@@ -1744,7 +1745,7 @@ button,
   content: "";
   position: absolute;
   bottom: -272px;
-  right: -257px;
+  right: -194px;
   width: 481px;
   height: 493px;
   background-image: url(../img/plans/weights.png);
@@ -1763,7 +1764,7 @@ button,
 }
 
 .promo {
-  padding-top: 119px;
+  padding-top: 120px;
   padding-bottom: 100px;
   color: #ffffff;
 }
@@ -1910,9 +1911,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   color: #ffffff;
@@ -1920,7 +1918,7 @@ button,
 
 .coaches__slide h3 {
   margin: 0;
-  margin-top: 221px;
+  margin-top: 247px;
   width: 100%;
   bottom: 32px;
   font-size: 18px;
@@ -1938,6 +1936,7 @@ button,
   margin: 0 auto;
   padding-left: 16px;
   font-size: 14px;
+  overflow: auto;
 }
 
 .coaches__slide li {
@@ -1952,7 +1951,7 @@ button,
 .coaches__slide:hover .coaches__description-wrapper,
 .coaches__slide:active .coaches__description-wrapper,
 .coaches__slide:focus-within .coaches__description-wrapper {
-  padding-bottom: 44px;
+  padding-bottom: 15px;
   background-color: rgba(16, 38, 84, 0.9);
 }
 
@@ -2357,19 +2356,19 @@ button,
 }
 
 .reviews .swiper-button-prev {
-  left: 278px;
+  left: 341px;
   top: 65%;
 }
 
 .reviews .swiper-button-next {
-  right: 278px;
+  right: 341px;
   top: 65%;
 }
 
 .contacts {
   padding-top: 69px;
   padding-bottom: 62px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .contacts .container {
@@ -2399,9 +2398,9 @@ button,
   content: "";
   position: absolute;
   z-index: -1;
-  left: -1000px;
+  left: -181%;
   top: -69px;
-  width: 272.5%;
+  width: 281%;
   height: 164%;
   background-color: #102654;
 }
@@ -2672,6 +2671,10 @@ button,
   .tabs__list li {
     width: 440px;
     margin: 0 20px 41px;
+  }
+
+  .tabs__list li:not(:nth-child(3n)) {
+    margin-right: 20px;
   }
 
   .tabs__button {
@@ -2968,7 +2971,7 @@ button,
   }
 
   .coaches__slide ul {
-    width: 71%;
+    width: 60%;
     font-size: 1.4vw;
   }
 
@@ -3240,7 +3243,7 @@ button,
   }
 
   .coaches__slide h3 {
-    margin-top: 29vw;
+    margin-top: 32vw;
     font-size: 2.3vw;
   }
 
@@ -3526,6 +3529,12 @@ button,
   .coaches__slide ul {
     width: 72%;
     font-size: 2.3vw;
+  }
+
+  .coaches__slide:hover h3,
+  .coaches__slide:active h3,
+  .coaches__slide:focus-within h3 {
+    margin-top: 46px;
   }
 
   .coaches__slide:hover p,

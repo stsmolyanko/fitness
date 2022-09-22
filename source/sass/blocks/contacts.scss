@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 69px;
   padding-bottom: 62px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .contacts .container {
@@ -41,9 +41,9 @@
     content: "";
     position: absolute;
     z-index: -1;
-    left: -1000px;
+    left: -181%;
     top: -69px;
-    width: 272.5%;
+    width: 281%;
     height: 164%;
     background-color: $color-sapphire-blue;
 

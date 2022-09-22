@@ -77,7 +77,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   color: $color-default-white;
@@ -85,7 +84,7 @@
 
 .coaches__slide h3 {
   margin: 0;
-  margin-top: 221px;
+  margin-top: 247px;
   width: 100%;
   bottom: 32px;
   font-size: 18px;
@@ -98,7 +97,7 @@
   }
 
   @media (max-width: 859px) {
-    margin-top: 29vw;
+    margin-top: 32vw;
     font-size: 2.3vw;
   }
 
@@ -138,9 +137,10 @@
   margin: 0 auto;
   padding-left: 16px;
   font-size: 14px;
+  overflow: auto;
 
   @include vp-1199 {
-    width: 71%;
+    width: 60%;
     font-size: 1.4vw;
   }
 
@@ -171,7 +171,7 @@
 .coaches__slide:hover .coaches__description-wrapper,
 .coaches__slide:active .coaches__description-wrapper,
 .coaches__slide:focus-within .coaches__description-wrapper {
-  padding-bottom: 44px;
+  padding-bottom: 15px;
   background-color: $color-dark-blue-90;
 }
 
@@ -179,6 +179,10 @@
 .coaches__slide:active h3,
 .coaches__slide:focus-within h3 {
   margin-top: 55px;
+
+  @include vp-767 {
+    margin-top: 46px;
+  }
 }
 
 .coaches__slide:hover p,

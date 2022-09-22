@@ -1,6 +1,6 @@
 .plans {
   padding-top: 119px;
-  padding-bottom: 105px;
+  padding-bottom: 65px;
   background-color: $color-grey;
 
   @include vp-1199 {
@@ -21,7 +21,7 @@
     content: "";
     position: absolute;
     bottom: -272px;
-    right: -257px;
+    right: -194px;
     width: 481px;
     height: 493px;
     background-image: url(../img/plans/weights.png);

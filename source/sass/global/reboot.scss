@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -33,7 +34,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: $color-default-white;
-  overflow-x: hidden;
 }
 
 body main {
