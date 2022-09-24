@@ -3,7 +3,7 @@ import Swiper, {Navigation} from 'swiper';
 const initCoachesSwiper = () => new Swiper('.coaches__slider', {
   modules: [Navigation],
   direction: 'horizontal',
-
+  loop: 'true',
 
   breakpoints: {
     1200: {
@@ -36,7 +36,6 @@ const initCoachesSwiper = () => new Swiper('.coaches__slider', {
 const initReviewsSwiper = () => new Swiper('.reviews__slider', {
   modules: [Navigation],
   direction: 'horizontal',
-  loop: 'true',
 
   navigation: {
     nextEl: '.swiper-button-next',

@@ -730,17 +730,17 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-display: swap;
-  src: local("Bebas Neue"), url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff");
+  src: local("BN"), url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Bebas Neue";
+  font-family: "BN";
   font-display: swap;
-  src: local("Bebas Neue"), url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
+  src: local("BN"), url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -779,6 +779,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -1297,7 +1298,7 @@ button,
 }
 
 .tabs__list li:not(:nth-child(3n)) {
-  margin-right: 40px;
+  margin-right: 3.5%;
 }
 
 .tabs__wrapper-inner {
@@ -1425,7 +1426,7 @@ button,
 .header h2 {
   margin: 0;
   width: 300px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 116px;
   line-height: 108px;
@@ -1443,7 +1444,7 @@ button,
 }
 
 .header__wrapper-top a {
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: #ffffff;
@@ -1500,7 +1501,7 @@ button,
 .header__wrapper-title-outer span {
   margin-top: 115px;
   margin-bottom: 8px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 400;
   font-size: 52px;
   line-height: 64px;
@@ -1515,7 +1516,7 @@ button,
 .header__services-list {
   position: absolute;
   left: -115px;
-  bottom: 20px;
+  top: 104px;
   text-align: right;
   font-size: 14px;
   line-height: 21px;
@@ -1585,7 +1586,7 @@ button,
   margin: 0;
   margin-top: 50px;
   margin-bottom: 3px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 52px;
   line-height: normal;
@@ -1608,7 +1609,7 @@ button,
 }
 
 .gym__wrapper-right {
-  min-height: 401px;
+  height: 401px;
   width: 56.9%;
   position: relative;
   background-color: #afafaf;
@@ -1756,7 +1757,7 @@ button,
 .plans h2 {
   margin: 0;
   margin-bottom: 34px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 52px;
   line-height: normal;
@@ -1805,7 +1806,7 @@ button,
 .promo h2 {
   margin: 0;
   width: 60%;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 95px;
   line-height: 90px;
   text-transform: uppercase;
@@ -1870,6 +1871,7 @@ button,
 
 .promo__wrapper-img {
   background-color: #102654;
+  height: 100%;
 }
 
 .coaches.container {
@@ -1881,7 +1883,7 @@ button,
 .coaches h2 {
   margin: 0;
   margin-bottom: 45px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 53px;
   line-height: normal;
   text-transform: uppercase;
@@ -1918,7 +1920,7 @@ button,
 
 .coaches__slide h3 {
   margin: 0;
-  margin-top: 247px;
+  margin-top: 94%;
   width: 100%;
   bottom: 32px;
   font-size: 18px;
@@ -1986,7 +1988,7 @@ button,
 .features h2 {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-weight: 700;
   font-size: 53px;
   line-height: normal;
@@ -2156,7 +2158,7 @@ button,
 .offers h2 {
   margin: 0;
   margin-bottom: 44px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 54px;
   line-height: normal;
   text-transform: uppercase;
@@ -2297,7 +2299,7 @@ button,
 .reviews h2 {
   margin: 0;
   margin-bottom: 51px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 52px;
   line-height: normal;
   text-align: center;
@@ -2383,7 +2385,7 @@ button,
 .contacts h2 {
   margin: 0;
   margin-bottom: 34px;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "BN", "Arial", sans-serif;
   font-size: 53px;
   line-height: normal;
   text-transform: uppercase;
@@ -2616,6 +2618,16 @@ button,
   }
 } */
 
+@media (max-width: 1256px) {
+  .reviews .swiper-button-prev {
+    left: 24vw;
+  }
+
+  .reviews .swiper-button-next {
+    right: 24vw;
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 150px;
@@ -2739,7 +2751,7 @@ button,
 
   .header__services-list {
     left: -63px;
-    bottom: 8px;
+    top: 73px;
   }
 
   .header__button {
@@ -3315,6 +3327,10 @@ button,
     margin: 0 0 37px;
   }
 
+  .tabs__list li:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
   .tabs__wrapper-inner {
     padding: 46px 36px;
   }
@@ -3389,7 +3405,7 @@ button,
 
   .header__services-list {
     left: -31px;
-    bottom: 3px;
+    top: 62px;
   }
 
   .header__wrapper-img {
@@ -3473,10 +3489,10 @@ button,
   .promo .container {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    -ms-grid-rows: -webkit-min-content 292px;
-    -ms-grid-rows: min-content 292px;
-    grid-template-rows: -webkit-min-content 292px;
-    grid-template-rows: min-content 292px;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: min-content min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content;
   }
 
   .promo__wrapper {
@@ -3500,6 +3516,11 @@ button,
   .promo p {
     font-size: 3vw;
     margin-bottom: 34px;
+  }
+
+  .promo__wrapper-img {
+    width: 100%;
+    height: 91vw;
   }
 
   .coaches.container {
@@ -3625,8 +3646,13 @@ button,
     padding-bottom: 54px;
   }
 
+  .offers img {
+    height: 93.3vw;
+  }
+
   .offers h2 {
     font-size: 34px;
+    margin-bottom: 41px;
   }
 
   .offers ul {
@@ -3644,10 +3670,10 @@ button,
   .offers__main-item {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    -ms-grid-rows: -webkit-min-content 299px;
-    -ms-grid-rows: min-content 299px;
-    grid-template-rows: -webkit-min-content 299px;
-    grid-template-rows: min-content 299px;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: min-content min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content;
   }
 
   .offers__main-item-wrapper {

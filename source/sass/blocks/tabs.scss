@@ -124,10 +124,14 @@
 }
 
 .tabs__list li:not(:nth-child(3n)) {
-  margin-right: 40px;
+  margin-right: 3.5%;
 
   @include vp-1199 {
     margin-right: 20px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
   }
 }
 

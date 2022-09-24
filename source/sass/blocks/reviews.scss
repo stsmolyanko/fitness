@@ -139,6 +139,10 @@
     top: 63%;
   }
 
+  @media (max-width: 1256px) {
+    left: 24vw;
+  }
+
   @media (max-width: 980px) {
     left: 5vw;
   }
@@ -156,6 +160,10 @@
   @include vp-1199 {
     right: 12vw;
     top: 63%;
+  }
+
+  @media (max-width: 1256px) {
+    right: 24vw;
   }
 
   @media (max-width: 980px) {
